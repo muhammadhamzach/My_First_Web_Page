@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  
 }
 
 /* navigation bar */
@@ -132,6 +133,55 @@ body {
       margin-left: 2em;
   }
 }
+
+/* contact */
+.contact_heading{
+  margin-top:100px;
+  text-align: center;
+}
+
+.contact_subtext{
+  margin-top:10px;
+  margin-bottom:80px;
+  text-align: center;
+}
+
+#contact_container{
+  margin-left:27%;
+  display: block;
+}
+
+input[type=text], select, textarea {
+  background-color:rgb(241,245,248);
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#fname{
+  width: 18%;
+  margin-right:1.75%;
+}
+
+#email{
+  width: 20%;
+}
+
+#subject, #contact_text{
+  width: 40%;
+}
+
+input[type=submit] {
+  background-color: rgb(250,105,78);
+  color: white;
+  padding: 12px 18.5%;
+  margin-top:15px;
+  border: none;
+  cursor: pointer;
+}
+
 
 /* footer */
 .footer {

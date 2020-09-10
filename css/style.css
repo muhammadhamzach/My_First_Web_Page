@@ -1,30 +1,26 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: inherit;
 }
 
 :root{
   --ff-primary: Arial, Helvetica, sans-serif;
-  --fw-reg: 400;
-  --fw-bold: 700;
-
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
-  :root {
-      --fs-h1: 4.5rem;
-      --fs-h2: 3.75rem;
-      --fs-h3: 1.5rem;
-      --fs-body: 1.125rem;
-  }
+body { 
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 /* navigation bar */
@@ -34,8 +30,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: var(--ff-primary) ;
-    
+    font-family: var(--ff-primary) ; 
 }
 
 #nav_bar a{
@@ -46,7 +41,6 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  position: relative;
   }
 
 .first_nav_link{
@@ -102,37 +96,79 @@
   transform: scale(1.1);
 }
 
+/* solutions */
+.solutions{
+  text-align: center;
+}
+
+.services {
+  margin-bottom: 1em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.services_image{
+  margin-top:50px;
+  margin-bottom: 50px;
+  width: 80px;
+}
+
+.solution_text{
+  margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .services {
+      display: flex;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .service + .service {
+      margin-left: 2em;
+  }
+}
+
 /* footer */
-.footer{
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width:100%;
-  background-color:rgb(51,51,51);
-  color:white;
 }
 
 #foot_nav {
+  background-color:rgb(51,51,51);
   list-style-type: none;
   overflow: hidden;
   font-family: var(--ff-primary) ;
-  font-size: 15px;
+  font-size:10px;
 }
 
 .footer a{
+  
+  float: right;
   margin-top: 20px;
   display: block;
   color: white;
   text-align: center;
-
+  padding: 12px;
   text-decoration: none;
-
 }
 
-.foot_link{
+.first_foot_link{
   margin-right:15%;
-
 }
 
 .trademark{
-  
-  margin-left: 15%;
-  float: left;
+    bottom:0;
+    color:white;
+    margin-top: 32px;
+    margin-left: 15%;
+    float: left;
 }

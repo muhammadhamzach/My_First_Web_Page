@@ -4,34 +4,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
+:root{
+  --ff-primary: Arial, Helvetica, sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
 
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+      --fs-h1: 4.5rem;
+      --fs-h2: 3.75rem;
+      --fs-h3: 1.5rem;
+      --fs-body: 1.125rem;
+  }
+}
+
+/* navigation bar */
 #nav_bar {
     background-color:rgb(64,88,92);
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--ff-primary) ;
     
 }
-  
-li {
-    float: right;
-}
-  
-li a {
-    margin-top: 20px;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    position: relative;
+
+#nav_bar a{
+  float: right;
+  margin-top: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  position: relative;
   }
 
-.nav_link{
+.first_nav_link{
   margin-right:15%;
 }
 
@@ -42,7 +60,79 @@ li a {
     float: left;
 }
 
-@media screen and (max-width: 768px) {
-  /* For mobile phones: */
+#home{
+  height: auto;
+  text-align: center;
+  justify-items: center;
+  display: block;
+  padding-top:150px;
+  padding-bottom:50px;
+  background-color:rgb(64,88,92);
+  color: white;
+}
 
+.home_title{
+  font-size: 60px;
+  padding:10px;
+}
+
+.home_info{
+  font-size: 20px;
+  padding-top: 20px;
+  word-wrap: break-word;
+  padding-left: 35%;
+  width: 65%;
+  line-height: 1.6;
+}
+
+/* get in touch button */
+.btn {
+  margin: 50px 0px 120px 0px;
+  display: inline-block;
+  padding: 10px 40px;
+  background: rgb(250, 105, 78);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* footer */
+.footer{
+  width:100%;
+  background-color:rgb(51,51,51);
+  color:white;
+}
+
+#foot_nav {
+  list-style-type: none;
+  overflow: hidden;
+  font-family: var(--ff-primary) ;
+  font-size: 15px;
+}
+
+.footer a{
+  margin-top: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+
+  text-decoration: none;
+
+}
+
+.foot_link{
+  margin-right:15%;
+
+}
+
+.trademark{
+  
+  margin-left: 15%;
+  float: left;
 }

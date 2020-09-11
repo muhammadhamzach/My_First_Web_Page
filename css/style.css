@@ -10,18 +10,14 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: inherit;
-}
 
-:root{
-  --ff-primary: Arial, Helvetica, sans-serif;
 }
 
 body { 
   position: absolute;
-  margin: 0;
   padding-bottom: 6rem;
-  min-height: 100%;
-  
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* navigation bar */
@@ -31,7 +27,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: var(--ff-primary) ; 
 }
 
 #nav_bar a{
@@ -92,7 +87,7 @@ body {
 
 .home_info{
   font-size: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
   word-wrap: break-word;
   padding-left: 35%;
   width: 65%;
@@ -101,7 +96,10 @@ body {
 
 @media screen and (max-width: 890px) {
   .home_title{
-    font-size:50px;
+    font-size:50px; 
+  }
+  .home_info{
+    font-size: 15px;
   }
 }
 
@@ -237,10 +235,15 @@ input[type=submit] {
 
 .contact_item{
   margin-bottom: 40px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  
 }
 
 @media screen and (max-width: 890px) {
   #contact_container{
+    position: static;
     margin-left:20%;
   }
   #fname{
@@ -260,10 +263,12 @@ input[type=submit] {
     padding: 12px 37%;
   }
 
-  #contat_info{
-  margin-top: 100px;
-  margin-left: 27%;
-}
+  #contact_info{
+    position: static;
+    margin-top: 50px;
+    margin-left: 12%;
+  }
+  
 }
 
 /* footer */
@@ -304,8 +309,4 @@ input[type=submit] {
     margin-top: 32px;
     margin-left: 15%;
     float: left;
-}
-
-@media screen and (max-width: 890px) {
-  
 }

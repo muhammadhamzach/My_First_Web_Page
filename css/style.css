@@ -17,7 +17,7 @@ html {
 }
 
 body { 
-  position: relative;
+  position: absolute;
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
@@ -35,7 +35,7 @@ body {
 }
 
 #nav_bar a{
-  float: right;
+  float: left;
   margin-top: 20px;
   display: block;
   color: white;
@@ -44,17 +44,36 @@ body {
   text-decoration: none;
   }
 
-.first_nav_link{
-  margin-right:15%;
-}
-
 .nav_title{
     margin-top: -8px;
     font-size: 30px;
     margin-left: 15%;
-    float: left;
+    margin-right: 50%;
+    
 }
 
+.first_nav_link{
+  margin-left:60%
+}
+
+@media screen and (max-width: 890px) {
+  #nav_bar a{
+    padding: 4px;
+    float: none;
+    width: 100%;
+  }
+  .first_nav_link, .nav_title{
+    float:none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .nav_title{
+    font-size:25px;
+  }
+  
+}
+
+/* home */
 #home{
   height: auto;
   text-align: center;
@@ -80,6 +99,12 @@ body {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 890px) {
+  .home_title{
+    font-size:50px;
+  }
+}
+
 /* get in touch button */
 .btn {
   margin: 50px 0px 120px 0px;
@@ -98,7 +123,7 @@ body {
 }
 
 /* solutions */
-.solutions{
+#solutions{
   text-align: center;
 }
 
@@ -111,17 +136,33 @@ body {
   margin: 0 auto;
 }
 
-.services_image{
-  margin-top:50px;
+.services_icon{
+  font-size:45px;
+  border-radius:50%;
+  margin-top:55px;
   margin-bottom: 50px;
-  width: 80px;
+  padding: 18px;
+  border-style:solid;
+  border-color: grey;
+  color:rgb(250,105,78)
+}
+
+.services_icon:hover{
+  border-color: rgb(250,105,78);
+  color:white;
+  background-color:rgb(250,105,78);
+}
+
+.fa-tv{
+  font-size:40px;
+  padding: 20px;
 }
 
 .solution_text{
   margin-bottom: 40px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 890px) {
   .services {
       display: flex;
       max-width: 1000px;
@@ -130,8 +171,8 @@ body {
   }
   
   .service + .service {
-      margin-left: 2em;
-  }
+    margin-left: 2em;
+  } 
 }
 
 /* contact */
@@ -193,8 +234,36 @@ input[type=submit] {
 .contact_item_head{
   margin-bottom: 20px;
 }
+
 .contact_item{
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 890px) {
+  #contact_container{
+    margin-left:20%;
+  }
+  #fname{
+    width: 36%;
+    margin-right:3.5%;
+  }
+  
+  #email{
+    width: 40%;
+  }
+  
+  #subject, #contact_text{
+    width: 80%;
+  }
+
+  input[type=submit] {
+    padding: 12px 37%;
+  }
+
+  #contat_info{
+  margin-top: 100px;
+  margin-left: 27%;
+}
 }
 
 /* footer */
@@ -216,7 +285,7 @@ input[type=submit] {
 
 .footer a{
   
-  float: right;
+  float: left;
   margin-top: 20px;
   display: block;
   color: white;
@@ -226,7 +295,7 @@ input[type=submit] {
 }
 
 .first_foot_link{
-  margin-right:15%;
+  margin-left:70%;
 }
 
 .trademark{
@@ -235,4 +304,8 @@ input[type=submit] {
     margin-top: 32px;
     margin-left: 15%;
     float: left;
+}
+
+@media screen and (max-width: 890px) {
+  
 }

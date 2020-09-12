@@ -1,6 +1,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  
 }
 
 *,
@@ -18,6 +19,8 @@ body {
   padding-bottom: 6rem;
   width:100%;
   font-family: Arial, Helvetica, sans-serif; 
+  
+  
 }
 
 /* navigation bar */
@@ -27,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 #nav_bar a{
@@ -37,21 +41,21 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  
   }
 
 .nav_title{
     margin-top: -8px;
     font-size: 30px;
     margin-left: 15%;
-    margin-right: 50%;
-    
+    margin-right: 50%; 
 }
 
 .first_nav_link{
   margin-left:60%
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 950px) {
   #nav_bar a{
     padding: 4px;
     float: none;
@@ -63,7 +67,7 @@ body {
     margin-left: 0;
   }
   .nav_title{
-    font-size:25px;
+    font-size:50px;
   }
   
 }
@@ -78,6 +82,7 @@ body {
   padding-bottom:50px;
   background-color:rgb(64,88,92);
   color: white;
+  
 }
 
 .home_title{
@@ -87,19 +92,20 @@ body {
 
 .home_info{
   font-size: 20px;
-  padding-top: 25px;
+  margin-top: 25px;
   word-wrap: break-word;
-  padding-left: 35%;
-  width: 65%;
+  padding-left: 30%;
+  padding-right: 30%;
   line-height: 1.6;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 950px) {
   .home_title{
     font-size:50px; 
   }
   .home_info{
-    font-size: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -125,11 +131,9 @@ body {
   text-align: center;
 }
 
-.services {
-  margin-bottom: 1em;
-}
-
 .service {
+  border-style: solid;
+  border-color: black;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -160,7 +164,7 @@ body {
   margin-bottom: 40px;
 }
 
-@media (min-width: 890px) {
+@media (min-width: 950px) {
   .services {
       display: flex;
       max-width: 1000px;

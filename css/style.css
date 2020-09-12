@@ -123,7 +123,6 @@ body {
   }
 }
 
-
 /* get in touch button */
 .btn {
   margin: 50px 0px 120px 0px;
@@ -193,6 +192,7 @@ body {
   }
 
 }
+
 @media screen and (max-width: 950px) {
   .services {
     flex-direction: column;

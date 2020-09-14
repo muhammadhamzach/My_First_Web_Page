@@ -282,6 +282,22 @@ input[type=submit] {
   color: rgb(133,133,133);
 }
 
+@media screen and (min-width: 2400)
+{
+  #contact_info{
+    border-style: dotted;
+    margin-top: -380px;
+    padding-left: 62%;
+  }
+
+  #email{
+    width: 25.25%;
+  }
+
+  input[type=submit] {
+    padding: 12px 24.75%;
+  }
+}
 @media screen and (max-width: 950px) {
   #contact_container{
     margin-bottom: 10%;

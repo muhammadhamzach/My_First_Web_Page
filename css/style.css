@@ -151,6 +151,10 @@ body {
   margin: 0 auto;
 }
 
+.services p{
+  color: rgb(133,133,133);
+}
+
 .service {
   margin-left: 5%;
 } 
@@ -212,6 +216,7 @@ body {
 
 .contact_subtext{
   margin-top:10px;
+  color: rgb(133,133,133);
   margin-bottom:60px;
   text-align: center;
 }
@@ -268,13 +273,13 @@ input[type=submit] {
 .contact_item{
   margin-bottom: 40px;
   cursor: pointer;
-  color: black;
+  color: rgb(133,133,133);
   text-decoration: none;
 }
 
 .phone{
   text-decoration: none;
-  color: black;
+  color: rgb(133,133,133);
 }
 
 @media screen and (max-width: 950px) {

@@ -7,4 +7,6 @@
 ## Summary
 
 * The project was made to test out the knowledge obtained during the learning phase of HTML and CSS and to test and debug problems in that specfic environment.
-* This Website is (supposedly) responsive.
+* This Website is (supposedly) responsive xD.
+
+#### Note: Bootstrap isnt implemented because i wanted to test my HTMl/CSS Skills instead of copy/pasting code first

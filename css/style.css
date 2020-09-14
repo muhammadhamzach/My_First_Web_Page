@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  box-sizing: border-box;
 }
 
 *,
@@ -192,7 +191,7 @@ body {
   .services {
     display: flex;
     max-width: 900px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
 }
@@ -200,7 +199,7 @@ body {
 @media screen and (max-width: 950px) {
   .services {
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .service {
     margin: 0 10%;
@@ -222,11 +221,13 @@ body {
 }
 
 #contact_container{
-  display: block;
+  display:block;
+  
   margin-bottom: 15%;
 }
 
 #form{
+  box-sizing: border-box;
   padding-left:17%;
 }
 
@@ -284,8 +285,11 @@ input[type=submit] {
 
 @media screen and (min-width: 2400)
 {
+  #contact_container{
+    margin-bottom: 5%;
+  }
+
   #contact_info{
-    border-style: dotted;
     margin-top: -380px;
     padding-left: 62%;
   }
@@ -325,13 +329,13 @@ input[type=submit] {
     text-align: center;
     padding-left: 0;
   }
-
 }
 
 @media screen and (max-width: 550px) {
   .contact_heading, .contact_subtext{
     font-size:19px;
   }
+
   .contact_subtext{
     padding-left: 5%;
     padding-right:5%;

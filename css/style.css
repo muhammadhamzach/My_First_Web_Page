@@ -176,6 +176,7 @@ body {
 .services_icon:hover{
   color:white;
   background-color:rgb(250,105,78);
+  border-color: rgb(250, 105, 78);
 }
 
 .fa-tv{
